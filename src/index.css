@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  /* =========================================================================
+     VERITAS AI — BURGUNDY × GOLD PREMIUM DESIGN TOKENS
+     ========================================================================= */
+  
+  /* Primary Brand Colours */
+  --color-burgundy-primary: #451F2D;
+  --color-burgundy-dark: #371723;
+  --color-burgundy-deep: #2A131B;
+  --color-burgundy-light: #572A3B;
+
+  --color-ivory-warm: #F5F1ED;
+  --color-ivory-light: #FAF8F5;
+  --color-surface-blush: #E9DFDC;
+  --color-card-white: #FFFFFF;
+
+  --color-gold-signature: #C7A05A;
+  --color-gold-dark: #A88340;
+  --color-gold-light: #DFC080;
+  --color-gold-muted: #E2CFAB;
+
+  --color-rose-dusty: #9B747A;
+  --color-rose-soft: #B89298;
+  --color-rose-light: #F2E8EA;
+
+  --color-plum-charcoal: #30272A;
+  --color-plum-dark: #221B1D;
+  --color-plum-surface: #382E32;
+
+  --color-border-warm: #E2D9D4;
+  --color-border-dark: #4A3A40;
+  --color-border-gold: #C7A05A;
+
+  --color-text-primary: #241C1E;
+  --color-text-secondary: #6B5B60;
+  --color-text-muted: #94858A;
+  --color-text-ivory: #F5F1ED;
+
+  /* Semantic State Colours */
+  --color-status-success: #2E5A44;
+  --color-status-success-light: #E8F2EC;
+  --color-status-warning: #C7A05A;
+  --color-status-warning-light: #FBF4E8;
+  --color-status-risk: #9B747A;
+  --color-status-risk-light: #F7EFF1;
+
+  /* Aliasing legacy tokens so all workspace components inherit the new palette cleanly */
+  --color-bg-warm: #F5F1ED;
+  --color-surface-warm: #FFFFFF;
+  --color-olive-primary: #451F2D;       /* Replaced with Deep Burgundy */
+  --color-olive-dark: #371723;          /* Replaced with Dark Burgundy */
+  --color-olive-muted: #9B747A;         /* Replaced with Dusty Rose */
+  --color-warning-warm: #C7A05A;        /* Replaced with Signature Gold */
+  --color-success-warm: #2E5A44;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+/* Custom Utilities or Global Adjustments */
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  background-color: #F5F1ED;
+  color: #241C1E;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  min-height: 100vh;
+}
+
+/* Typography styles to ensure clean magazine feel */
+.font-serif-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.text-editorial {
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* Custom dotted pipeline lines or minimal accents */
+.pipeline-dots {
+  background-image: radial-gradient(#C7A05A 1px, transparent 1px);
+  background-size: 8px 8px;
+}
